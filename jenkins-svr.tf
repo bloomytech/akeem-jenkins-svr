@@ -21,7 +21,7 @@ resource "aws_instance" "jenkins-server" {
   associate_public_ip_address = true
   user_data                   = file("jenkins.sh")
   tags = {
-    Name = "akeem-jenkins-server"
+    Name = "akeem-jenkins-svr"
   }
 
 }
