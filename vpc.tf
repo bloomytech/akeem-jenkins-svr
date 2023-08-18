@@ -49,9 +49,9 @@ resource "aws_default_security_group" "default-sg" {
   }
   ingress {
     description = "Allow all ingress traffic"
-    from_port = 0
-    to_port = 0
-    protocol = "-1"
+    from_port = 9000
+    to_port = 9092
+    protocol = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
   egress {
